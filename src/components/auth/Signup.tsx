@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Zap, Mail, Lock, User, Eye, EyeOff, Sparkles } from 'lucide-react';
+import { Mail, Lock, User, Eye, EyeOff, Sparkles } from 'lucide-react';
 
 interface SignupProps {
   onSignup: () => void;
@@ -57,12 +57,7 @@ export default function Signup({ onSignup }: SignupProps) {
         <div className="relative">
           {/* Logo */}
           <div className="flex items-center justify-center mb-8">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl blur-md opacity-50"></div>
-              <div className="relative bg-gradient-to-r from-blue-500 to-blue-600 p-3 rounded-xl">
-                <Zap className="w-8 h-8 text-white" />
-              </div>
-            </div>
+            <img src="/vids-logo.svg" alt="vids.so" className="h-10 w-auto" />
           </div>
 
           <h1 className="text-center mb-2 gradient-text">Create Account</h1>

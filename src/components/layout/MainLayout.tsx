@@ -49,14 +49,8 @@ export default function MainLayout({ onLogout }: MainLayoutProps) {
         <div className="flex flex-col h-full">
           {/* Logo */}
           <div className="flex items-center justify-between p-6 border-b border-zinc-800/50">
-            <Link to="/" className="flex items-center gap-3 group">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg blur-md opacity-50 group-hover:opacity-75 transition-opacity"></div>
-                <div className="relative bg-gradient-to-r from-blue-500 to-blue-600 p-2 rounded-lg">
-                  <Zap className="w-6 h-6 text-white" />
-                </div>
-              </div>
-              <span className="gradient-text">CreatorGrowth</span>
+            <Link to="/" className="flex items-center gap-3">
+              <img src="/vids-logo.svg" alt="vids.so" className="h-8 w-auto" />
             </Link>
             <button
               onClick={() => setSidebarOpen(false)}
